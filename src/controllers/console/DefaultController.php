@@ -1,6 +1,6 @@
 <?php
 
-namespace portalium\template\controllers\console;
+namespace diginova\efe\controllers\console;
 
 use portalium\console\Controller as ConsoleController;
 

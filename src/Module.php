@@ -1,6 +1,6 @@
 <?php
 
-namespace portalium\template;
+namespace diginova\efe;
 
 class Module extends \portalium\base\Module
 {
@@ -8,20 +8,20 @@ class Module extends \portalium\base\Module
         [
             'class' => 'yii\rest\UrlRule',
             'controller' => [
-                'template/default',
+                'efe/default',
             ]
         ],
     ];
     
     public static function moduleInit()
     {
-        self::registerTranslation('template','@portalium/template/messages',[
-            'template' => 'template.php',
+        self::registerTranslation('efe','@diginova/efe/messages',[
+            'efe' => 'efe.php',
         ]);
     }
 
     public static function t($message, array $params = [])
     {
-        return parent::coreT('template', $message, $params);
+        return parent::coreT('efe', $message, $params);
     }
 }
